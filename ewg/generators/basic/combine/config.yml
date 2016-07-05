@@ -1,0 +1,14 @@
+development: &default
+  enabled: false
+  target: 'js'
+  repetitive:
+    -
+      combined: 'combined.js'
+      sources:
+        - 'js/*.js'
+
+test:
+  <<: *default
+
+production:
+  <<: *default

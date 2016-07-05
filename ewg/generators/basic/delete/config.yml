@@ -1,0 +1,10 @@
+development: &default
+  enabled: false
+  folders:
+    - '/abs/path/to/folder'
+
+test:
+  <<: *default
+
+production:
+  <<: *default

@@ -1,0 +1,21 @@
+development: &default
+  enabled: true
+  minimize: false
+  source_maps: './maps'
+  include_paths:
+  repetitive:
+    -
+      source: ''
+      target: ''
+      selector: '*.sass'
+    -
+      source: 'sass'
+      target: 'css'
+      selector: '**/*.sass'
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  minimize: true

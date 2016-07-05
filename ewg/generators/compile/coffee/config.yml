@@ -1,0 +1,13 @@
+development: &default
+  enabled: true
+  minimize: false
+  source: 'coffee'
+  target: 'js'
+  selector: '**/*.coffee'
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  minimize: true

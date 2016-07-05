@@ -1,0 +1,11 @@
+development: &default
+  enabled: true
+  source: ''
+  directory: 'lib'
+  target: 'lib'
+
+test: &test
+  <<: *default
+
+production: &production
+  <<: *default

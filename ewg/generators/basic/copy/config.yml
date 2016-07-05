@@ -1,0 +1,14 @@
+development: &default
+  enabled: false
+  selector: '**/*'
+  repetitive:
+    -
+      source: 'public'
+      target: ''
+      selector: '**/*'
+
+test:
+  <<: *default
+
+production:
+  <<: *default
