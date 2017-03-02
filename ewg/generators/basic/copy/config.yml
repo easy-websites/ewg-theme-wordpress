@@ -1,6 +1,6 @@
 development: &default
   enabled: false
-  selector: '**/*'
+  selector: '**/.*'
   repetitive:
     -
       source: 'public'
